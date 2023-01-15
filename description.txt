@@ -1,0 +1,17 @@
+-----------------------------------------------------------------------------------
+A. OPTIONS
+-----------------------------------------------------------------------------------
+  1. Mathematical operations with two numbers (addition, subtraction)
+  2. All numbers are natural (from 0 to 9)    
+  3. The values of numbers and mathematical symbols are generated in random order
+  4. After entering the answer, a message appears about the success of solving the
+     expression
+
+-----------------------------------------------------------------------------------
+B. DATA 
+-----------------------------------------------------------------------------------
+  - Mathematical expression 
+  - Area for entering the answer 
+  - Button to send the answer
+  - Message about successful or unsuccessful solution
+    of the expression (Success! / Error!)
