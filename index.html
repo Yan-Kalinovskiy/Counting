@@ -8,17 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Counting</title>
+    <link rel="stylesheet" href="./counting.css" />
   </head>
   <body>
     <main>
-      <p class="js-example"></p>
-      <form>
-        <label>
-          <input type="text" name="username" placeholder="Write your answer" />
-        </label>
-        <button type="submit">Check</button>
-      </form>
-      <p class="js-massage"></p>
+      <div class="container">
+        <p class="js-example"></p>
+        <form>
+          <label>
+            <input type="text" name="username" placeholder="Write your answer"autocomplete="off" autofocus/>
+          </label>
+          <button type="submit">Check</button>
+        </form>
+        <p class="js-message"></p>
+      </div>
+      <p class="copyright">
+        Copyright &copy; 2023 Yan Kalynovskyi
+      </p>
     </main>
     <script src="./counting.js"></script>
   </body>

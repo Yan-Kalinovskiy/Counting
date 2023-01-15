@@ -1,5 +1,5 @@
 const example = document.querySelector('.js-example');
-const massage = document.querySelector('.js-massage');
+const message = document.querySelector('.js-message');
 const inputEl = document.querySelector('input');
 
 const a = getNumber(1,9);
@@ -13,7 +13,7 @@ result = a + b;
 result = a - b;
 }
 
-example.textContent = `${a} ${operator} ${b}`;
+example.textContent = `${a} ${operator} ${b} = `;
 
 const formEl = document.querySelector("form");
 formEl.addEventListener("submit", handleSubmit);
@@ -25,9 +25,13 @@ elements: { input }
 } = event.currentTarget;
 
 if (Number(inputEl.value) === result) {
-massage.textContent = "Success!";
+message.textContent = "Success!";
+example.textContent += inputEl.value;
+setTimeout(() => {
+  location.reload();
+  }, 1800);
 } else {
-massage.textContent = "Error! Try again";
+message.textContent = "Error! Try again";
 }
 event.currentTarget.reset();
 }
@@ -43,5 +47,4 @@ var operators = ['+', '-'];
 var randomIndex = Math.floor(Math.random() * operators.length);
 return operators[randomIndex];
 }
-
 
